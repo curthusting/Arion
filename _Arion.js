@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     /*===========================
-    Base3 Framework
+    Arion Framework
     ===========================*/
     window.Arion = function (params) {
 
