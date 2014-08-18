@@ -1,7 +1,7 @@
 /*===========================
 Features Support Detection
 ===========================*/
-Base3.prototype.support = (function () {
+Arion.prototype.support = (function () {
     var support = {
         touch: !!(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch)
     };

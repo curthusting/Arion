@@ -13,9 +13,12 @@
 
         // Animation Frame
         app._animationFrame = function (callback) {
-            if (window.requestAnimationFrame) return window.requestAnimationFrame(callback);
-            else if (window.webkitRequestAnimationFrame) return window.webkitRequestAnimationFrame(callback);
-            else if (window.mozRequestAnimationFrame) return window.mozRequestAnimationFrame(callback);
+            if (window.requestAnimationFrame)
+                return window.requestAnimationFrame(callback);
+            else if (window.webkitRequestAnimationFrame)
+                return window.webkitRequestAnimationFrame(callback);
+            else if (window.mozRequestAnimationFrame)
+                return window.mozRequestAnimationFrame(callback);
             else {
                 return window.setTimeout(callback, 1000 / 60);
             }
